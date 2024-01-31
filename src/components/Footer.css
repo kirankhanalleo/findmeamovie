@@ -1,0 +1,16 @@
+.footer{
+    bottom:10px;
+    position: fixed;
+    right:20px;
+}
+.footer>p{
+    font-size: 13px;
+}
+.footer>p>a{
+    color:white;
+    text-decoration: none;
+}
+.footer>p>a:hover{
+    /* text-decoration: underline; */
+    color:rgb(217, 72, 72);
+}

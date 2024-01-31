@@ -1,0 +1,118 @@
+.moviemodal{
+    color:black;
+    position: fixed;
+    top:15%;
+    margin: 20px 50px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background: rgb(241, 240, 240);
+    border-radius: 10px;
+    z-index: 1;
+}
+.moviemodal__contents{
+    display:flex;
+    flex-direction: row;
+}
+.movie__banner{
+    border-radius: 3px;
+    height:340px;
+    min-width:250px;
+}
+.moviemodal__h1{
+    font-size: 20px;
+    text-align: left;
+}
+.movie__desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.movie__title{
+    text-align: left;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    letter-spacing: .7px;
+    word-spacing: 1px;
+}
+.movie_releaseDate,.movie__language,.movie__description,.average__vote{
+    text-align: justify;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+.uppercase{text-transform: uppercase;}
+.try_again{
+    background: #d90a15;
+    color:white;
+    font-weight: 600;
+    margin-top: 40px;
+    padding:17px 80px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 10px;
+    opacity:0.9;
+    border:none;
+    transition: all 0.2s ease-in-out;
+}
+.try_again:hover{
+    opacity:1;
+    cursor: pointer;
+}
+.close{
+    color: black;
+    height:40px;
+    width:35px;
+    transition: transform .25s, opacity .25s;
+}
+.topModalContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0.8;
+}
+.close:hover{
+    cursor: pointer;
+    color:#d90a15;
+    opacity: 1;
+    transform: rotate(90deg);
+}
+@media only screen and (max-width:600px){
+    .moviemodal__contents{
+        flex-direction: column;
+    }
+    .movie__banner{
+        height:200px;
+        margin-top: 10px;
+        min-width:300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .moviemodal{
+        top:10%;
+        padding:10px 10px 35px 0px;
+        margin:10px 15px;
+    }
+    .movie__title{
+        margin-top: 20px;
+    }
+    .try_again{
+        font-size: 18px;
+        padding: 17px;
+        margin-top: 25px;
+    }
+    .moviemodal__h1{
+        padding-left: 27px;
+    }
+    .close{
+        height:25px;
+        width:25px;
+        margin-top: 13px;
+        margin-right: 25px;
+    }
+}

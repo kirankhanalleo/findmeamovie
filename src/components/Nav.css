@@ -1,0 +1,39 @@
+.nav{
+    background: linear-gradient(to bottom,rgb(0,0,0,1),rgb(60, 47, 47,0.5));
+}
+.nav__contents{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+}
+.nav__contentsLogo>img{
+    height:55px;
+    width:100%;
+}
+.nav__contentsSearchBar{
+    color:white;
+    margin-right:25px;
+    margin-top:10px;   
+}
+.icon{
+    height:35px;
+    width:35px;
+}
+.icon:hover{
+    cursor:pointer;
+}
+@media only screen and (max-width:600px){
+    .nav__contentsLogo>img{
+        height:45px;
+        width:100%;
+    }
+    .nav__contentsSearchBar{
+        right:20px;
+        top:18px;   
+    }
+    .icon{
+        height:30px;
+        width:30px;
+    }
+}

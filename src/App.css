@@ -1,0 +1,6 @@
+.App{
+        background: url("./components/assets/HomeScreenBg.jpg") no-repeat center;
+        /* background-position: fixed; */
+        background-size: cover;
+        height:100vh;
+}

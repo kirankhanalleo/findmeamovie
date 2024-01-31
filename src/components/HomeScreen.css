@@ -1,0 +1,63 @@
+.homescreen{
+    color:white;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    background-image: linear-gradient(
+            to top,
+            rgba(0,0,0,0.8) 0,
+            rgba(0,0,0,0) 60%,
+            rgba(0,0,0,0.8) 100%
+        );
+    height:100vh;
+    width:100%;
+}
+.homescreen__content{
+    margin-top: 80px;
+}
+.homescreen__content>h1{
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.homescreen__content>h2{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color:rgb(241, 241, 241);
+    letter-spacing: .7px;
+}
+@media only screen and (max-width:600px){
+    .homescreen__content{
+        margin-top: 55px;
+    }
+    .homescreen__content>h1{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    .homescreen__content>h2{
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        
+    }
+}
+.pickmovie{
+    background: #d90a15;
+    color:white;
+    font-weight: 600;
+    margin-top: 40px;
+    padding:17px 80px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 10px;
+    opacity:0.9;
+    border:none;
+    transition: all 0.2s ease-in-out;
+}
+.pickmovie:hover{
+    cursor: pointer;
+    opacity:1;
+}
